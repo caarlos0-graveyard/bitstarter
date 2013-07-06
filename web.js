@@ -1,9 +1,14 @@
-var express = require('express');
+var express = require('express')
+  , fs = require('fs');
 
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('Hello World 2!');
+  // async is always better
+  fs.readFile('index.html', function (err, text) {
+    response.setHeader('Content-Type', 'text/html');
+    response.end(text);
+  });
 });
 
 var port = process.env.PORT || 5000;
