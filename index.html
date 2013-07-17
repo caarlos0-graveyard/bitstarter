@@ -3,98 +3,187 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lorem Ipsum">
+  <meta name="author" content="Carlos A Becker">
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <title>My first Bitstarter</title>
   <style type="text/css">
     body {
-      padding-top: 20px;
+      padding-top: 60px;
       padding-bottom: 40px;
     }
-    /* .container { this rule will only fuck up everything.
-      width: 960px;
-    }*/
-    p.lead {
-      padding-top: 15px;
-    }
-    .navigation,
-    .pitch,
-    .section1,
-    .section2,
-    .faq,
-    .footer {
-      padding: 10px 0px 10px 0px;
-    }
-    .video,
-    .thermometer,
-    .order,
-    .social {
-      border: 1px dotted;
+
+    .center {
       text-align: center;
     }
-    .video {
-      height: 124px;
-      line-height: 124px;
+
+    .dark {
+      background-color: #333;
+      color: #f0f0f0;
     }
-    .thermometer,
-    .order,
-    .social {
-      height: 40px;
-      line-height: 40xp;
+
+    .eighty-percent {
+      width: 80%;
+      margin-left: 10%;
     }
-    div.row,
-    div.row-fluid {
-      border: 1px solid;
+
+    .head {
+      padding-bottom: 20px;
+    }
+
+    .head p {
+      font-size: 20px;
+    }
+
+    .head h1 {
+      font-size: 50px;
+    }
+
+    .arrecadations,
+    .buttons {
+      padding: 15px;
+    }
+
+    .arrecadations div:nth-child(2),
+    .arrecadations div:nth-child(1) {
+      border-right: 1px solid #fff;
+    }
+
+    .btn-fb,
+    .btn-tw {
+      width: 100px;
+    }
+
+    .height-300 {
+      height: 310px;
+    }
+
+    .row-principal {
+      margin-bottom: 20px;
+    }
+
+    .row-principal > div > p {
+      text-align: justify;
+      font-size: 15px;
     }
   </style>
-  <title>My first Bitstarter</title>
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.js"></script>
+  <![endif]-->
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="row-fluid navigation">
-      <div class="span2 logo">Logo</div>
-      <div class="span6 blank">Blank</div>
-      <div class="span4 about">About</div>
-    </div>
-    <div class="row-fluid heading">
-      <div class="span12">
-        <h1>Bitstarter Title</h1>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="#">Bitstarter</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
-    <div class="row-fluid subheading">
-      <div class="span12">
-        <p class="lead">
-          This is my first bitstarter project.
+  </div>
+
+  <div class="container">
+
+    <div class="row-fluid row-principal">
+      <div class="span12 center head">
+        <h1>Product</h1>
+        <p>One product description</p>
+      </div>
+    </div>
+
+    <div class="row-fluid row-principal">
+      <div class="span6">
+        <img src="http://placehold.it/480x300" class="img-polaroid">
+      </div>
+      <div class="span6 center dark height-300">
+        <div class="row-fluid arrecadations">
+          <div class="span4">
+            <strong>1000</strong><br>
+            backers
+          </div>
+          <div class="span4">
+            <strong>$ 50,000</strong><br>
+            of $ 100,000
+          </div>
+          <div class="span4">
+            <strong>20</strong><br>
+            days left
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span12">
+            <div class="progress eighty-percent">
+              <div class="bar bar-success" style="width: 70%;"></div>
+              <div class="bar bar-warning" style="width: 30%;"></div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row-fluid buttons">
+          <div class="span12 center">
+            <a href="#" class="btn btn-success btn-large">Preorder</a>
+          </div>
+        </div>
+        <br>
+        <div class="row-fluid buttons">
+          <div class="span3"></div>
+          <div class="span3 center">
+            <a href="#" class="btn btn-tw btn-primary">
+              Twitter
+            </a>
+          </div>
+          <div class="span3 center">
+            <a href="#" class="btn btn-fb btn-primary">
+              Facebook
+            </a>
+          </div>
+          <div class="span3"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row-fluid row-principal">
+      <div class="span6">
+        <img src="http://placehold.it/480x300" class="img-polaroid">
+      </div>
+      <div class="span6">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.
         </p>
       </div>
     </div>
-    <div class="row-fluid pitch">
-      <div class="span6 video">
-        Video
+
+    <div class="row-fluid row-principal">
+      <div class="span6">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.
+        </p>
       </div>
       <div class="span6">
-        <div class="thermometer">Thermometer</div>
-        <div class="order">Order</div>
-        <div class="social">Social</div>
+        <img src="http://placehold.it/480x300" class="img-polaroid">
       </div>
     </div>
-    <div class="row-fluid section1">
-      <div class="span12">
-        Marketing Section 1
-      </div>
-    </div>
-    <div class="row-fluid section2">
-      <div class="span12">
-        Marketing Section 2
-      </div>
-    </div>
-    <div class="row-fluid faq">
-      <div class="span12">
-        FAQ
-      </div>
-    </div>
-    <div class="row-fluid foorter">
-      <div class="span12">Footer</div>
-    </div>
+
+    <hr>
+
+    <footer>
+      <p>&copy; Company 2013</p>
+    </footer>
+
   </div>
-  <!-- script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script -->
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>
