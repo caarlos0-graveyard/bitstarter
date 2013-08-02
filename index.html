@@ -1,189 +1,100 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lorem Ipsum">
-  <meta name="author" content="Carlos A Becker">
-  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-  <title>My first Bitstarter</title>
-  <style type="text/css">
-    body {
-      padding-top: 60px;
-      padding-bottom: 40px;
-    }
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    .center {
-      text-align: center;
-    }
-
-    .dark {
-      background-color: #333;
-      color: #f0f0f0;
-    }
-
-    .eighty-percent {
-      width: 80%;
-      margin-left: 10%;
-    }
-
-    .head {
-      padding-bottom: 20px;
-    }
-
-    .head p {
-      font-size: 20px;
-    }
-
-    .head h1 {
-      font-size: 50px;
-    }
-
-    .arrecadations,
-    .buttons {
-      padding: 15px;
-    }
-
-    .arrecadations div:nth-child(2),
-    .arrecadations div:nth-child(1) {
-      border-right: 1px solid #fff;
-    }
-
-    .btn-fb,
-    .btn-tw {
-      width: 100px;
-    }
-
-    .height-300 {
-      height: 310px;
-    }
-
-    .row-principal {
-      margin-bottom: 20px;
-    }
-
-    .row-principal > div > p {
-      text-align: justify;
-      font-size: 15px;
-    }
-  </style>
-  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
-    <script src="../assets/js/html5shiv.js"></script>
-  <![endif]-->
+  <title>milky</title>
+  <link href="./style.css" rel="stylesheet">
 </head>
+
 <body>
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container-fluid">
-        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="brand" href="#">Bitstarter</a>
-        <div class="nav-collapse collapse">
-          <ul class="nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-  </div>
 
   <div class="container">
-
-    <div class="row-fluid row-principal">
-      <div class="span12 center head">
-        <h1>Product</h1>
-        <p>One product description</p>
+   <!-- Static navbar -->
+   <div class="navbar">
+    <div class="container">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">milky</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
       </div>
     </div>
 
-    <div class="row-fluid row-principal">
-      <div class="span6">
-        <img src="http://placehold.it/480x300" class="img-polaroid">
-      </div>
-      <div class="span6 center dark height-300">
-        <div class="row-fluid arrecadations">
-          <div class="span4">
-            <strong>1000</strong><br>
-            backers
-          </div>
-          <div class="span4">
-            <strong>$ 50,000</strong><br>
-            of $ 100,000
-          </div>
-          <div class="span4">
-            <strong>20</strong><br>
-            days left
-          </div>
-        </div>
-        <div class="row-fluid">
-          <div class="span12">
-            <div class="progress eighty-percent">
-              <div class="bar bar-success" style="width: 70%;"></div>
-              <div class="bar bar-warning" style="width: 30%;"></div>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="row-fluid buttons">
-          <div class="span12 center">
-            <a href="#" class="btn btn-success btn-large">Preorder</a>
-          </div>
-        </div>
-        <br>
-        <div class="row-fluid buttons">
-          <div class="span3"></div>
-          <div class="span3 center">
-            <a href="#" class="btn btn-tw btn-primary">
-              Twitter
-            </a>
-          </div>
-          <div class="span3 center">
-            <a href="#" class="btn btn-fb btn-primary">
-              Facebook
-            </a>
-          </div>
-          <div class="span3"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row-fluid row-principal">
-      <div class="span6">
-        <img src="http://placehold.it/480x300" class="img-polaroid">
-      </div>
-      <div class="span6">
+    <section>
+      <div class="jumbotron center">
+        <h1>O agronegócio precisa evoluir</h1>
+        <h2>Tecnologia para controle de rebanhos leiteiros</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.
+          <a class="coinbase-button" data-code="7da42f384a43a6dced7b1375222dfd7c"
+            data-button-style="custom_small"
+            href="https://coinbase.com/checkouts/7da42f384a43a6dced7b1375222dfd7c">
+            Pay With Bitcoin
+          </a>
+          <script src="https://coinbase.com/assets/button.js"
+            type="text/javascript"></script>
+        </p>
+        <p>
+          <!-- AddThis Button BEGIN -->
+          <div class="addthis_toolbox addthis_default_style">
+          <a class="addthis_button_facebook_like"
+            fb:like:layout="button_count"></a>
+          <a class="addthis_button_tweet"></a>
+          <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+          </div>
+          <script type="text/javascript">
+            var addthis_config = {"data_track_addressbar":true};
+          </script>
+          <script type="text/javascript"
+            src="//s7.addthis.com/js/300/addthis_widget.js#pubid=caarlos0">
+          </script>
+          <!-- AddThis Button END -->
         </p>
       </div>
-    </div>
+    </section>
+    <hr>
+    <section id="marketing">
+      <div class="row">
+        <div class="col-lg-6">
+          <h4>Gerenciamento</h4>
+          <p>
+            Fácil gerenciamento do rebanho e seus dados de produção, evitando
+            o desperdício e facilitando a visualização de problemas no rebanho
+            ou alimentação.
+          </p>
+        </div>
 
-    <div class="row-fluid row-principal">
-      <div class="span6">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.
-        </p>
+        <div class="col-lg-6">
+          <h4>Triagem</h4>
+          <p>
+            Triagem de dados de diversas propriedades, proporcionando dados
+            para identificação de padrões de problemas e suas respectivas
+            soluções através de redes neurais.
+          </p>
+        </div>
       </div>
-      <div class="span6">
-        <img src="http://placehold.it/480x300" class="img-polaroid">
-      </div>
-    </div>
-
+    </section>
     <hr>
 
-    <footer>
-      <p>&copy; Company 2013</p>
-    </footer>
+    <section>
+      <div class="footer">
+        <p>&copy; Milky 2013</p>
+      </div>
+    </section>
 
-  </div>
-  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  </div> <!-- /container -->
+
 </body>
 </html>
